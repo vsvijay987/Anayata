@@ -1,9 +1,7 @@
-import Head from "next/head";
 import Link from "next/link";
 
 import Banner from "../components/Banner";
 import Header from "../components/Header";
-import styles from "../styles/Home.module.css";
 import { sanityClient, urlFor } from "../sanity";
 import { Post } from "../typings";
 
@@ -14,10 +12,6 @@ interface Props {
 const Home = ({ posts }: Props) => {
   return (
     <div className="max-w-7xl mx-auto">
-      <Head>
-        <title>Anayata</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <div>
         <Banner />
@@ -73,4 +67,3 @@ export const getServerSideProps = async () => {
     },
   };
 };
-

@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
+//@ts-ignore
 import nprogress from "nprogress";
 import Router from "next/router";
 

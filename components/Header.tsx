@@ -1,12 +1,15 @@
 import React from "react";
+import Link from 'next/link'
 
 const Header = ({NextLink}: any) => {
   return (
     <header className="flex justify-between p-5 max-w-7xl mx-auto">
       <div className="flex items-center space-x-8">
-        <NextLink  href="/">
+        <Link href="/">
+
           <h2>Anayata</h2>
-        </NextLink>
+        </Link>
+        
         <div className="inline-flex items-center space-x-5">
           <h3 className="text-white px-4 py-1 rounded-full" style={{backgroundColor: '#a75ca5'}}>
             Home

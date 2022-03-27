@@ -163,7 +163,7 @@ const Post = ({ post }: Props) => {
       <div className="flex flex-col p-10 my-10 max-w-2xl mx-auto shadow-violet-500 shadow space-y-2">
         <h3 className="text-4xl">Comments</h3>
         <hr />
-        {comments.map((comment) => (
+        {comments && comments.map((comment) => (
           <div key={comment._id}>
             <p>
               <span className="text-violet-500">{comment.name}: </span>
@@ -181,7 +181,7 @@ export default Post;
 export const getStaticPaths = async () => {
   const query = `*[_type == "post"]{
         _id, 
-       slug{
+       slug {
        current
      }
      }`;

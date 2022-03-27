@@ -20,7 +20,6 @@ interface Props {
 
 const Post = ({ post }: Props) => {
   const [submitted, setSubmitted] = useState(false);
-  const [comments, setComments] = useState(post?.comments);
 
   const {
     register,
@@ -35,7 +34,7 @@ const Post = ({ post }: Props) => {
       body: JSON.stringify(data),
     })
       .then(() => {
-        setComments((prev) => [data, ...prev])
+       
         setSubmitted(true);
       })
       .catch((error) => {
@@ -163,7 +162,7 @@ const Post = ({ post }: Props) => {
       <div className="flex flex-col p-10 my-10 max-w-2xl mx-auto shadow-violet-500 shadow space-y-2">
         <h3 className="text-4xl">Comments</h3>
         <hr />
-        {comments && comments.map((comment) => (
+        {post.comments && post.comments.map((comment) => (
           <div key={comment._id}>
             <p>
               <span className="text-violet-500">{comment.name}: </span>

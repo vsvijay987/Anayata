@@ -1,5 +1,4 @@
 import { GetStaticProps } from "next/types";
-import Image from 'next/image'
 import PortableText from "react-portable-text";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
@@ -44,10 +43,7 @@ const Post = ({ post }: Props) => {
         setSubmitted(false);
       });
   };
-
-  console.log('comments', comments);
   
-
   return (
     <div>
       <Header />
@@ -62,7 +58,7 @@ const Post = ({ post }: Props) => {
           {post.description}
         </h2>
         <div className="flex items-center space-x-2">
-          <Image
+          <img
             className="h10 w-10 rounded-full"
             src={urlFor(post.author.image).url()!}
             alt=""

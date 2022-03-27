@@ -31,6 +31,5 @@ export default async function createComment(
   } catch (error) {
     res.status(500).json({ message: `Couldn't submit comment`, error });
   }
-  console.log("Comment submitted");
   res.status(200).json({ message: "Comment submitted" });
 }

@@ -12,6 +12,7 @@
     "@portabletext/react": "^1.0.4",
     "@sanity/client": "^3.3.0",
     "@sanity/image-url": "^1.0.1",
+    "@types/next": "^9.0.0",
     "axios": "^0.26.1",
     "next": "12.1.0",
     "next-sanity": "^0.5.1",

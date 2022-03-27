@@ -1,5 +1,4 @@
 import React from "react";
-//@ts-ignore
 import NextLink from "next/Link";
 
 const Header = () => {

@@ -20,7 +20,7 @@ interface Props {
 
 const Post = ({ post }: Props) => {
   const [submitted, setSubmitted] = useState(false);
-  const [comments, setComments] = useState(post.comments);
+  const [comments, setComments] = useState(post?.comments);
 
   const {
     register,

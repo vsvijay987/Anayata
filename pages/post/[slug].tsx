@@ -96,7 +96,7 @@ const Post = ({ post }: Props) => {
       </article>
       <hr className="max-w-lg my-5 mx-auto border border-violet afda-500" />
       {submitted ? (
-        <div className="flex flex-col p-10 my-10 bg-#a75ca5 text-white max-w-2xl mx-auto">
+        <div className="flex flex-col p-10 my-10 bg-violet-500 text-white max-w-2xl mx-auto">
           <h3 className="text-3xl font-bold">
             Thank you for submitting the comment!
           </h3>

@@ -13,7 +13,7 @@ interface Props {
 const Home = ({ posts }: Props) => {
   return (
     <div className="max-w-7xl mx-auto">
-      <Header />
+      <Header NextLink={NextLink}/>
       <div>
         <Banner />
       </div>

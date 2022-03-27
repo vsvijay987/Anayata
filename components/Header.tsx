@@ -1,7 +1,6 @@
 import React from "react";
-import NextLink from "next/Link";
 
-const Header = () => {
+const Header = ({NextLink}: any) => {
   return (
     <header className="flex justify-between p-5 max-w-7xl mx-auto">
       <div className="flex items-center space-x-8">

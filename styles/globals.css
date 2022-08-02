@@ -4,6 +4,14 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #E0EAFC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 a {
@@ -13,6 +21,22 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.font-link {
+  font-family: 'Bree Serif', serif;
+  color: #96856c;
+}
+
+.font-para {
+  font-family: 'Mukta', sans-serif;
+  font-size: x-large;
+  color: #96856c
+}
+
+.font-head {
+  font-family: 'Noto Sans', sans-serif;
+  color: #9f4fa3
 }
 
 @tailwind base;

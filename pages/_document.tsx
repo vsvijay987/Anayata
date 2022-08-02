@@ -12,6 +12,7 @@ export default function Document() {
                 <link
                     href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mukta&family=Noto+Sans&display=swap"
                     rel="stylesheet"
+                    cross-origin
                 />
             </Head>
             <body>

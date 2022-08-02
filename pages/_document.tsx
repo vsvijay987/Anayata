@@ -8,11 +8,14 @@ export default function Document() {
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" type="text/css" href="/nprogress.css" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link
+                    rel="preconnect"
+                    href="https://fonts.gstatic.com"
+                    crossOrigin="anonymous"
+                />
                 <link
                     href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mukta&family=Noto+Sans&display=swap"
                     rel="stylesheet"
-                    cross-origin
                 />
             </Head>
             <body>
